@@ -6,22 +6,22 @@
 </head>
 <body>
 
-	<form action="index.html">
+	<form action="share" method="post">
 		<table align="center" border="1px">
 			<tr>
 				<th colspan="2">Registration form</th>
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td><input type="text" required placeholder="Enter your name" /></td>
+				<td><input type="text" name="name" required placeholder="Enter your name" /></td>
 			</tr>
 			<tr>
 				<td>Age</td>
-				<td><input type="number" required placeholder="Enter your age" /></td>
+				<td><input type="number" name="age" required placeholder="Enter your age" /></td>
 			</tr>
 			<tr>
 				<td>Email</td>
-				<td><input type="email" required placeholder="Enter your email" /></td>
+				<td><input type="email" name="email" required placeholder="Enter your email" /></td>
 			</tr>
 			<tr>
 				<td>Gender</td>
@@ -40,18 +40,18 @@
 			<tr>
 				<td>Country</td>
 				<td>
-				<select>
-				<option>--SELECT--</option>
-				<option>India</option>
-				<option>USA</option>
-				<option>UK</option>
+				<select name="country">
+				<option value="">--SELECT--</option>
+				<option value="India">India</option>
+				<option value="USA">USA</option>
+				<option value="UK">UK</option>
 				</select>
 				</td>
 			</tr>
 			<tr>
 				<td>Feedback</td>
 				<td>
-				<textarea rows="5" cols="50"></textarea>
+				<textarea name="feedback" rows="5" cols="50"></textarea>
 				</td>
 			</tr>
 			<tr>
