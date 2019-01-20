@@ -12,4 +12,11 @@
     <servlet-name>myHelloServlet</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
+  <context-param>
+    <param-name>institute</param-name>
+    <param-value>InfoCampus</param-value>
+  </context-param>
+  
+  
+  
 </web-app>

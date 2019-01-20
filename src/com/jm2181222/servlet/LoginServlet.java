@@ -20,6 +20,7 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		System.out.println("Im in doGet method of Login servlet");
 		RequestDispatcher rd1 = request.getRequestDispatcher("header.html");
 		RequestDispatcher rd2 = request.getRequestDispatcher("login.html");
 		RequestDispatcher rd3 = request.getRequestDispatcher("footer.html");
@@ -33,6 +34,7 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		System.out.println("I'm in login servlet....");
 		String un = request.getParameter("username");
 		String p = request.getParameter("password");
 
