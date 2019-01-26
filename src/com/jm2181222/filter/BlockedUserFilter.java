@@ -9,7 +9,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
-@WebFilter("/login")
+//@WebFilter("/login")
 public class BlockedUserFilter implements Filter {
 
 	public void destroy() {

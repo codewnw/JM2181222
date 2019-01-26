@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebFilter;
 /**
  * Servlet Filter implementation class ValidationFilter
  */
-@WebFilter("/login")
+//@WebFilter("/login")
 public class ValidationFilter implements Filter {
 
 	/**
@@ -37,7 +37,9 @@ public class ValidationFilter implements Filter {
 		System.out.println(">>" + this.getClass().getSimpleName());
 		String un = request.getParameter("username");
 		String p = request.getParameter("password");
-		if (un != null && p != null && !un.isEmpty() && !p.isEmpty()) {
+		if (un == null && p == null ) {
+			chain.doFilter(request, response);
+		}else if(!un.isEmpty() && !p.isEmpty()) {
 			chain.doFilter(request, response);
 		}
 		System.out.println("<<" + this.getClass().getSimpleName());
