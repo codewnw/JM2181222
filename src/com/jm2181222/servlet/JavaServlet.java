@@ -34,6 +34,9 @@ public class JavaServlet extends HttpServlet {
 		String mbl = config.getInitParameter("mobile");
 
 		ServletContext context = config.getServletContext();
+		context.setAttribute("copyrightYear", "2019");
+		context.setAttribute("copyrightYear", "2020");
+		context.removeAttribute("copyrightYear");
 		String inst = context.getInitParameter("institute");
 
 		response.setContentType("text/HTML");

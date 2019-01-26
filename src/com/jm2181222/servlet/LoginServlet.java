@@ -40,6 +40,7 @@ public class LoginServlet extends HttpServlet {
 
 		if (un.equals(p)) {
 			request.setAttribute("msg", "User has been logged in successfully.");
+			request.setAttribute("tempMsg", "This is temp msg from login.");
 			RequestDispatcher rs = request.getRequestDispatcher("profile");
 			rs.forward(request, response);
 		} else {

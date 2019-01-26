@@ -24,6 +24,8 @@ public class ProfileServlet extends HttpServlet {
 			throws ServletException, IOException {
 		response.setContentType("text/HTML");
 		System.out.println("I'm in profile servlet.");
+		request.setAttribute("tempMsg", "This is temp msg from profile.");
+		request.removeAttribute("tempMsg");
 		String un = request.getParameter("username");
 		String message = (String) request.getAttribute("msg");
 
