@@ -4,6 +4,11 @@ import java.util.Arrays;
 
 public class User {
 
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	private String name;
 
 	public User(String name, int age, String email, String gender, String[] courses, String country, String feedback) {

@@ -8,7 +8,7 @@
 </head>
 <body>
 <%@ include file="header.html" %>
-	<form action="process-user-registration.jsp" method="post">
+	<form action="user-profile-expression-lang.jsp" method="post">
 		<table align="center" border="1px">
 			<tr>
 				<th colspan="2">Registration form</th>
@@ -19,7 +19,7 @@
 			</tr>
 			<tr>
 				<td>Age</td>
-				<td><input type="number" name="age" required placeholder="Enter your age" /></td>
+				<td><input type="number"  required placeholder="Enter your age" /></td>
 			</tr>
 			<tr>
 				<td>Email</td>
